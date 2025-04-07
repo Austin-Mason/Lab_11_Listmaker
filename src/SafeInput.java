@@ -31,7 +31,7 @@ public class SafeInput {
             System.out.print(prompt + " ");
             if (pipe.hasNextInt()) {
                 input = pipe.nextInt();
-                pipe.nextLine(); // consume newline
+                pipe.nextLine();
                 if (input >= low && input <= high) {
                     return input;
                 } else {
